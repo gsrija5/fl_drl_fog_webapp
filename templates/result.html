@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simulation Results</title>
+</head>
+<body>
+    <h2>Results for {{ agent }}</h2>
+
+    <img src="data:image/png;base64,{{ image }}" alt="Simulation Graph"><br><br>
+
+    <h3>Final Metrics:</h3>
+    <ul>
+        <li>Average Reward: {{ metrics.reward }}</li>
+        <li>Total Latency: {{ metrics.latency }} seconds</li>
+    </ul>
+
+    <a href="/">Run Another Simulation</a>
+</body>
+</html>

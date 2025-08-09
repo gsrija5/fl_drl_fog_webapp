@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fog Network Simulation</title>
+</head>
+<body>
+    <h2>Run Offloading Simulation</h2>
+    <form method="post" action="/simulate">
+        <label>Select Agent:</label>
+        <select name="agent" required>
+            <option value="FL+DRL">FL + DRL</option>
+            <option value="DRL">Independent DRL</option>
+            <option value="Centralized">Centralized DRL</option>
+            <option value="Random">Random Agent</option>
+        </select><br><br>
+
+        <label>Number of Rounds:</label>
+        <input type="number" name="rounds" value="10" min="1" required><br><br>
+
+        <button type="submit">Run Simulation</button>
+    </form>
+</body>
+</html>
